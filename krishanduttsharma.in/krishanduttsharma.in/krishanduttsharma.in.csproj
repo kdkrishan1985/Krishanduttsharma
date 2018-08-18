@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F628F23-DEBC-4F02-B50D-F41F3D0B6EB7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>krishanduttsharma.in</RootNamespace>
+    <AssemblyName>krishanduttsharma.@in</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.3.7\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.3.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.0\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.5.1\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.4.0\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.5.1\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.5.1\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.5.1\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.5.1\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.5.1\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="apple-touch-icon-114x114-precomposed.png" />
+    <Content Include="apple-touch-icon-144x144-precomposed.png" />
+    <Content Include="apple-touch-icon-57x57-precomposed.png" />
+    <Content Include="apple-touch-icon-72x72-precomposed.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="backup\css\main.css" />
+    <Content Include="backup\css\normalize.css" />
+    <Content Include="backup\css\normalize.min.css" />
+    <Content Include="backup\images\ERP.JPG" />
+    <Content Include="backup\images\floor.jpg" />
+    <Content Include="backup\images\floor1.jpg" />
+    <Content Include="backup\images\graternoidaAccount.JPG" />
+    <Content Include="backup\images\kd.jpg" />
+    <Content Include="backup\images\kdQR.jpg" />
+    <Content Include="backup\images\noida1.JPG" />
+    <Content Include="backup\images\noida2.JPG" />
+    <Content Include="backup\images\noidacitizioncharter.JPG" />
+    <Content Include="backup\images\ukmandi.JPG" />
+    <Content Include="backup\images\UPDESCO.JPG" />
+    <Content Include="backup\images\vandorGri.JPG" />
+    <Content Include="backup\images\yamunagri.JPG" />
+    <Content Include="backup\js\main.js" />
+    <Content Include="backup\js\vendor\html5shiv.js" />
+    <Content Include="backup\js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="backup\js\vendor\jquery.easytabs.min.js" />
+    <Content Include="backup\js\vendor\jquery.hashchange.min.js" />
+    <Content Include="bin\Winthusiasm.HtmlEditor.dll" />
+    <Content Include="BlogDb.xml" />
+    <Content Include="BlogDetails.aspx" />
+    <Content Include="BlogEntry.aspx" />
+    <Content Include="bolg.htm" />
+    <Content Include="CatBlog.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\normalize.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="backup\images\krishandutt.pdf" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170701.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170702.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170703.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170704.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170705.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170706.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170707.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170708.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170709.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170710.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170711.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170712.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170713.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170714.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170715.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170716.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170717.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170718.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170719.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170720.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170721.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170722.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170723.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170724.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170725.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170726.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170727.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170728.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170729.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170730.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170731.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170801.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170802.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170803.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170804.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170805.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170807.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170808.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170809.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170810.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170813.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170814.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170815.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170816.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170817.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170818.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170819.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170820.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170821.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170822.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170823.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170824.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170825.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170826.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170827.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170828.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170829.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170830.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170831.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170902.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170903.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170904.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170905.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170906.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170907.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170908.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170909.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170910.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170911.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170912.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170913.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170914.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170915.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170916.log" />
+    <Content Include="backup\Log\W3SVC1431\u_ex170917.log" />
+    <Content Include="bin\Winthusiasm.HtmlEditor.dll.refresh" />
+    <Content Include="images\krishandutt.pdf" />
+    <Content Include="index.aspx" />
+    <Content Include="Log\W3SVC1431\u_ex180314.log" />
+    <Content Include="Log\W3SVC1431\u_ex180315.log" />
+    <Content Include="Log\W3SVC1431\u_ex180316.log" />
+    <Content Include="Log\W3SVC1431\u_ex180317.log" />
+    <Content Include="Log\W3SVC1431\u_ex180318.log" />
+    <Content Include="Log\W3SVC1431\u_ex180319.log" />
+    <Content Include="Log\W3SVC1431\u_ex180320.log" />
+    <Content Include="Log\W3SVC1431\u_ex180321.log" />
+    <Content Include="Log\W3SVC1431\u_ex180322.log" />
+    <Content Include="Log\W3SVC1431\u_ex180323.log" />
+    <Content Include="Log\W3SVC1431\u_ex180324.log" />
+    <Content Include="Log\W3SVC1431\u_ex180325.log" />
+    <Content Include="Log\W3SVC1431\u_ex180326.log" />
+    <Content Include="Log\W3SVC1431\u_ex180327.log" />
+    <Content Include="Log\W3SVC1431\u_ex180328.log" />
+    <Content Include="Log\W3SVC1431\u_ex180329.log" />
+    <Content Include="Log\W3SVC1431\u_ex180330.log" />
+    <Content Include="Log\W3SVC1431\u_ex180331.log" />
+    <Content Include="Log\W3SVC1431\u_ex180401.log" />
+    <Content Include="Log\W3SVC1431\u_ex180402.log" />
+    <Content Include="Log\W3SVC1431\u_ex180403.log" />
+    <Content Include="Log\W3SVC1431\u_ex180404.log" />
+    <Content Include="Log\W3SVC1431\u_ex180405.log" />
+    <Content Include="Log\W3SVC1431\u_ex180406.log" />
+    <Content Include="Log\W3SVC1431\u_ex180407.log" />
+    <Content Include="Log\W3SVC1431\u_ex180408.log" />
+    <Content Include="Log\W3SVC1431\u_ex180409.log" />
+    <Content Include="Log\W3SVC1431\u_ex180410.log" />
+    <Content Include="Log\W3SVC1431\u_ex180411.log" />
+    <Content Include="Log\W3SVC1431\u_ex180412.log" />
+    <Content Include="Log\W3SVC1431\u_ex180413.log" />
+    <Content Include="Log\W3SVC1431\u_ex180414.log" />
+    <Content Include="Log\W3SVC1431\u_ex180415.log" />
+    <Content Include="Log\W3SVC1431\u_ex180416.log" />
+    <Content Include="Log\W3SVC1431\u_ex180417.log" />
+    <Content Include="Log\W3SVC1431\u_ex180418.log" />
+    <Content Include="Log\W3SVC1431\u_ex180419.log" />
+    <Content Include="Log\W3SVC1431\u_ex180420.log" />
+    <Content Include="Log\W3SVC1431\u_ex180421.log" />
+    <Content Include="Log\W3SVC1431\u_ex180422.log" />
+    <Content Include="Log\W3SVC1431\u_ex180423.log" />
+    <Content Include="Log\W3SVC1431\u_ex180424.log" />
+    <Content Include="Log\W3SVC1431\u_ex180425.log" />
+    <Content Include="Log\W3SVC1431\u_ex180426.log" />
+    <Content Include="Log\W3SVC1431\u_ex180427.log" />
+    <Content Include="Log\W3SVC1431\u_ex180428.log" />
+    <Content Include="Log\W3SVC1431\u_ex180429.log" />
+    <Content Include="Log\W3SVC1431\u_ex180430.log" />
+    <Content Include="Log\W3SVC1431\u_ex180501.log" />
+    <Content Include="Log\W3SVC1431\u_ex180502.log" />
+    <Content Include="Log\W3SVC1431\u_ex180503.log" />
+    <Content Include="Log\W3SVC1431\u_ex180504.log" />
+    <Content Include="Log\W3SVC1431\u_ex180505.log" />
+    <Content Include="Log\W3SVC1431\u_ex180506.log" />
+    <Content Include="Log\W3SVC1431\u_ex180507.log" />
+    <Content Include="Log\W3SVC1431\u_ex180508.log" />
+    <Content Include="Log\W3SVC1431\u_ex180509.log" />
+    <Content Include="Log\W3SVC1431\u_ex180510.log" />
+    <Content Include="Log\W3SVC1431\u_ex180511.log" />
+    <Content Include="Log\W3SVC1431\u_ex180512.log" />
+    <Content Include="Log\W3SVC1431\u_ex180513.log" />
+    <Content Include="Log\W3SVC1431\u_ex180514.log" />
+    <Content Include="Log\W3SVC1431\u_ex180515.log" />
+    <Content Include="Log\W3SVC1431\u_ex180516.log" />
+    <Content Include="Log\W3SVC1431\u_ex180517.log" />
+    <Content Include="Log\W3SVC1431\u_ex180518.log" />
+    <Content Include="Log\W3SVC1431\u_ex180519.log" />
+    <Content Include="Log\W3SVC1431\u_ex180520.log" />
+    <Content Include="Log\W3SVC1431\u_ex180521.log" />
+    <Content Include="Log\W3SVC1431\u_ex180522.log" />
+    <Content Include="Log\W3SVC1431\u_ex180523.log" />
+    <Content Include="Log\W3SVC1431\u_ex180524.log" />
+    <Content Include="Log\W3SVC1431\u_ex180525.log" />
+    <Content Include="Log\W3SVC1431\u_ex180526.log" />
+    <Content Include="Log\W3SVC1431\u_ex180527.log" />
+    <Content Include="Log\W3SVC1431\u_ex180528.log" />
+    <Content Include="Log\W3SVC1431\u_ex180529.log" />
+    <Content Include="Log\W3SVC1431\u_ex180530.log" />
+    <Content Include="Log\W3SVC1431\u_ex180531.log" />
+    <Content Include="Log\W3SVC1431\u_ex180601.log" />
+    <Content Include="Log\W3SVC1431\u_ex180602.log" />
+    <Content Include="Log\W3SVC1431\u_ex180603.log" />
+    <Content Include="Log\W3SVC1431\u_ex180604.log" />
+    <Content Include="Log\W3SVC1431\u_ex180605.log" />
+    <Content Include="Log\W3SVC1431\u_ex180606.log" />
+    <Content Include="Log\W3SVC1431\u_ex180607.log" />
+    <Content Include="Log\W3SVC1431\u_ex180608.log" />
+    <Content Include="Log\W3SVC1431\u_ex180609.log" />
+    <Content Include="Log\W3SVC1431\u_ex180610.log" />
+    <Content Include="Log\W3SVC1431\u_ex180611.log" />
+    <Content Include="Log\W3SVC1431\u_ex180612.log" />
+    <Content Include="Log\W3SVC1431\u_ex180613.log" />
+    <Content Include="Log\W3SVC1431\u_ex180614.log" />
+    <Content Include="Log\W3SVC1431\u_ex180615.log" />
+    <Content Include="Log\W3SVC1431\u_ex180616.log" />
+    <Content Include="Log\W3SVC1431\u_ex180617.log" />
+    <Content Include="Log\W3SVC1431\u_ex180618.log" />
+    <Content Include="Log\W3SVC1431\u_ex180619.log" />
+    <Content Include="Log\W3SVC1431\u_ex180620.log" />
+    <Content Include="Log\W3SVC1431\u_ex180621.log" />
+    <Content Include="Log\W3SVC1431\u_ex180622.log" />
+    <Content Include="Log\W3SVC1431\u_ex180623.log" />
+    <Content Include="Log\W3SVC1431\u_ex180624.log" />
+    <Content Include="Log\W3SVC1431\u_ex180625.log" />
+    <Content Include="Log\W3SVC1431\u_ex180626.log" />
+    <Content Include="Log\W3SVC1431\u_ex180627.log" />
+    <Content Include="Log\W3SVC1431\u_ex180628.log" />
+    <Content Include="Log\W3SVC1431\u_ex180629.log" />
+    <Content Include="Log\W3SVC1431\u_ex180630.log" />
+    <Content Include="Log\W3SVC1431\u_ex180701.log" />
+    <Content Include="Log\W3SVC1431\u_ex180702.log" />
+    <Content Include="Log\W3SVC1431\u_ex180703.log" />
+    <Content Include="Log\W3SVC1431\u_ex180704.log" />
+    <Content Include="Log\W3SVC1431\u_ex180705.log" />
+    <Content Include="Log\W3SVC1431\u_ex180706.log" />
+    <Content Include="Log\W3SVC1431\u_ex180707.log" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Debug\krishanduttsharma.in.csproj.CoreCompileInputs.cache" />
+    <Content Include="apple-touch-icon-114x114-precomposed.zip" />
+    <Content Include="krishanduttsharma.in" />
+    <Content Include="MainMaster.Master" />
+    <Content Include="MainMaster_New.Master" />
+    <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="images\ERP.JPG" />
+    <Content Include="images\floor.jpg" />
+    <Content Include="images\floor1.jpg" />
+    <Content Include="images\graternoidaAccount.JPG" />
+    <Content Include="images\kd.jpg" />
+    <Content Include="images\kdQR.jpg" />
+    <Content Include="images\kdQR.png" />
+    <Content Include="images\noida1.JPG" />
+    <Content Include="images\noida2.JPG" />
+    <Content Include="images\noidacitizioncharter.JPG" />
+    <Content Include="images\ukmandi.JPG" />
+    <Content Include="images\UPDESCO.JPG" />
+    <Content Include="images\vandorGri.JPG" />
+    <Content Include="images\yamunagri.JPG" />
+    <Content Include="js\main.js" />
+    <Content Include="js\vendor\html5shiv.js" />
+    <Content Include="js\vendor\jquery-1.10.1.min.js" />
+    <Content Include="js\vendor\jquery.easytabs.min.js" />
+    <Content Include="js\vendor\jquery.hashchange.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.js" />
+    <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="usage\ChartConfig.js" />
+    <Content Include="usage\HourHits.gif" />
+    <Content Include="usage\index.html" />
+    <Content Include="usage\MonthlyHits.gif" />
+    <Content Include="usage\PercentHourlyHits.gif" />
+    <Content Include="usage\UrlHits.gif" />
+    <Content Include="Web.config" />
+    <Content Include="usage\HitsPerMonthPerUrl.tpl" />
+    <Content Include="usage\HourlyHits.csv" />
+    <Content Include="usage\HourlyHits.lpc" />
+    <Content Include="usage\HourlyHits_tmp.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\Model.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BlogDetails.aspx.cs">
+      <DependentUpon>BlogDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BlogEntry.aspx.cs">
+      <DependentUpon>BlogEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatBlog.aspx.cs">
+      <DependentUpon>CatBlog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster_New.Master.cs">
+      <DependentUpon>MainMaster_New.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster_New.Master.designer.cs">
+      <DependentUpon>MainMaster_New.Master</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="aspnet_client\system_web\4_0_30319\" />
+    <Folder Include="backup\aspnet_client\system_web\4_0_30319\" />
+    <Folder Include="backup\usage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50165</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50165/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.6.1\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
